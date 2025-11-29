@@ -24,8 +24,6 @@ This repository demonstrates a complete AI Agent Developer environment setup wit
 **Status:** ✅ Installed  
 **Version:** 2.52.0
 
-![Git Version Screenshot](screenshots/git-version.png)
-
 ```bash
 git --version
 # Output: git version [your-version]
