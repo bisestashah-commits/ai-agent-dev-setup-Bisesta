@@ -1,8 +1,8 @@
-# AI Agent Developer Setup - [Your Name]
+# AI Agent Developer Setup - Bisesta Shah
 
-**Cohort:** [Your Cohort Name]  
+**Cohort:** - AI agents Setup  
 **Week:** 1 - Development Environment Setup  
-**Date:** [Submission Date]
+**Date:** 29 November 2025
 
 ---
 
