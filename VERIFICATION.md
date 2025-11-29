@@ -38,6 +38,7 @@ Evidence: Screenshot shows Claude interacting with calendar scheduling capabilit
 
 4. GitHub Server Verification
 Status: ✅ Connected and Functional
+
 Test Performed:
 User: List files in this repository
 Claude: [Uses GitHub MCP server to query repository]
@@ -72,7 +73,7 @@ bash$ git log --oneline
 [commit-hash] chore: Initialize repository structure
 [commit-hash] docs: Add MCP servers documentation
 [commit-hash] feat: Add connection test documentation
-Show Image
+
 Commit Details
 Each commit demonstrates proper version control workflow:
 
@@ -95,6 +96,7 @@ All screenshots meet the following criteria:
 
 MCP Server Connection Evidence
 Claude Desktop MCP Panel Screenshot
+
 Visible Elements:
 
 All 4 servers listed in Claude Desktop settings
@@ -107,28 +109,44 @@ Functionality Testing Summary
 ServerConnectionTestedWorkingEvidenceRolldice✅✅✅Screenshot + Test outputBootcamp AI Agent✅✅✅Screenshot + Test outputCalendar Booking✅✅✅Screenshot + Test outputGitHub✅✅✅Screenshot + Repository interaction
 
 Troubleshooting Documentation
-
-Issue 1: GitHub MCP Server Failure
-
-Problem: The github MCP server repeatedly failed to authenticate despite correcting the JSON structure and generating new PATs.
-
+Issue 1: GitHub MCP Server Authentication Failure
+Problem: The GitHub MCP server repeatedly failed to authenticate despite correcting the JSON structure and generating new Personal Access Tokens (PATs).
 Solution: The issue was resolved by generating a new PAT with the repo scope and setting the token as a Windows System Environment Variable (GITHUB_PERSONAL_ACCESS_TOKEN), forcing the variable to load reliably before the Claude process started.
-
 Prevention: For stability, system-level environment variables should be the preferred method for sensitive secrets over application configuration files.
+Key Learnings:
+
+Environment variables at the system level are more reliable than app-level configs
+Always verify PAT permissions match required scopes
+Restart Claude Desktop after environment variable changes
 
 
 Final Verification Statement
-I, verify that:
+I, Bisesta Shah, verify that:
 
-All 4 MCP servers are properly configured and connected
-Each server has been tested and is fully functional
-The GitHub MCP server successfully interacts with this repository
-This repository contains 5+ meaningful commits following Git best practices
-All screenshots are clear, authentic, and demonstrate required functionality
-All documentation is complete and meets submission requirements
+✅ All 4 MCP servers are properly configured and connected
+✅ Each server has been tested and is fully functional
+✅ The GitHub MCP server successfully interacts with this repository
+✅ This repository contains 5+ meaningful commits following Git best practices
+✅ All screenshots are clear, authentic, and demonstrate required functionality
+✅ All documentation is complete and meets submission requirements
 
+Signature: Bisesta Shah
+Date: 29 Nov 2025
+
+Additional Notes
+The setup process provided valuable insights into MCP server architecture and the importance of proper authentication configuration. The GitHub server integration proved to be the most complex but also the most powerful, enabling direct repository management through Claude.
+The troubleshooting experience with environment variables reinforced the importance of understanding how different operating systems handle configuration and secrets management.
 
 Next Steps
 With environment verification complete, I am ready to proceed to Week 2 of the AI Agent Developer bootcamp.
 Environment Status: ✅ READY FOR DEVELOPMENT
 
+Resources Used
+
+MCP Documentation
+GitHub Personal Access Tokens Guide
+Claude Desktop Configuration
+Windows Environment Variables Setup
+
+
+This verification document demonstrates successful completion of Week 1 environment setup requirements for the AI Agent Developer bootcamp.
