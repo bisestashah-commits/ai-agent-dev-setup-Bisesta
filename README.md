@@ -146,9 +146,9 @@ To replicate this setup:
 
 ## 📫 Contact
 
-**Name:** [Your Name]  
-**GitHub:** [@your-username](https://github.com/your-username)  
-**Email:** [your-email@example.com]
+**Name:** Bisesta Shah
+**GitHub:** https://github.com/bisestashah-commits
+**Email:** bisestshah@gmail.com
 
 ---
 
